@@ -1,0 +1,46 @@
+.country1 {
+  padding: 20px;
+  background-color: #e04f82;
+  position: relative;
+}
+
+.country2 {
+  padding: 20px;
+  background-color: #cc4775;
+  position: relative;
+}
+
+.country1 h1,
+.country2 h1,
+.country1 h3,
+.country2 h3 {
+  color: #fff;
+  text-decoration: none;
+  background-color: inherit;
+}
+
+.Link {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  position: absolute;
+  right: 23px;
+}
+
+.imgcont {
+  display: flex;
+}
+
+.imgcont img:nth-child(1) {
+  margin: 0 auto;
+}
+
+.imgcont img:nth-child(2) {
+  height: 16px;
+  position: absolute;
+  right: 23px;
+}
+
+.textcont {
+  text-align: end;
+}
