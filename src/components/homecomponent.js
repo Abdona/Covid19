@@ -3,7 +3,7 @@ import style from './homecomponent.module.css';
 
 const Home = () => (
   <div className={style.home}>
-    <h1>Stats By Country</h1>
+    <h3>STATS BY COUNTRY</h3>
     <div className={style.container}>
       <Country class="even" country="Egypt" styleclass="container1" today_confirmed="383" />
       <Country class="odd" country="German" styleclass="container2" today_confirmed="69" />

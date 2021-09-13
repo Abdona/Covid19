@@ -1,5 +1,6 @@
-.home h1:first-child {
+.home h3:first-child {
   background-color: #e04f82;
+  padding: 0.3rem 0 0.3rem 0.5rem;
 }
 
 .container {
