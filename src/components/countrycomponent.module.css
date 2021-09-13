@@ -1,11 +1,13 @@
 .country1 {
   padding: 20px;
   background-color: #e04f82;
+  position: relative;
 }
 
 .country2 {
   padding: 20px;
   background-color: #cc4775;
+  position: relative;
 }
 
 .country1 h1,
@@ -21,4 +23,16 @@
   color: #fff;
   font-family: "Poppins", sans-serif;
   text-decoration: none;
+  position: absolute;
+  right: 23px;
+}
+
+.imgcont {
+  display: flex;
+}
+
+.imgcont img:nth-child(2) {
+  height: 16px;
+  position: absolute;
+  right: 23px;
 }

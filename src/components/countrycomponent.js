@@ -7,19 +7,29 @@ import navarrow from '../assets/right-arrow.svg';
 
 const Country = (props) => {
   const stylex = props.class === 'even' ? style.country1 : style.country2;
-  return (
-    <Link to="/description" className={style.Link}>
-      <div className={stylex}>
+  let navarrowicon = '';
+  if (props.nav) {
+    navarrowicon = (
+      <Link to="/description" className={style.Link}>
         <img src={navarrow} alt="navarrow" />
+      </Link>
+    );
+  }
+  return (
+
+    <div className={stylex}>
+      <div className={style.imgcont}>
         <img src={flag} alt={props.country} />
-        <h1>
-          {props.country}
-        </h1>
-        <h3>
-          {props.today_confirmed}
-        </h3>
+        {navarrowicon}
       </div>
-    </Link>
+      <h1>
+        {props.country}
+      </h1>
+      <h3>
+        {props.today_confirmed}
+      </h3>
+    </div>
+
   );
 };
 
