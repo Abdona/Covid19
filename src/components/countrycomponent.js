@@ -1,21 +1,20 @@
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable react/prop-types */
 import { Link } from 'react-router-dom';
+import style from './countrycomponent.module.css';
 
 const Country = (props) => (
-  <>
-    <Link to="/description">
+  <Link to="/description" className={style.Link}>
+    <div className={style.container}>
       <img src="sdfsf" alt={props.country} />
       <h1>
-
         {props.country}
-
       </h1>
       <h3>
         {props.today_confirmed}
       </h3>
-    </Link>
-  </>
+    </div>
+  </Link>
 );
 
 export default Country;
