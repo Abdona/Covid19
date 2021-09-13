@@ -1,12 +1,15 @@
 import Country from './countrycomponent';
+import style from './homecomponent.module.css';
 
 const Home = () => (
   <>
     <h1>Stats By Country</h1>
-    <Country country="Egypt" styleclass="container1" today_confirmed="383" />
-    <Country country="German" styleclass="container2" today_confirmed="69" />
-    <Country country="Italy" styleclass="container1" today_confirmed="9483" />
-    <Country country="Spain" styleclass="container2" today_confirmed="655" />
+    <div className={style.container}>
+      <Country class="even" country="Egypt" styleclass="container1" today_confirmed="383" />
+      <Country class="odd" country="German" styleclass="container2" today_confirmed="69" />
+      <Country class="odd" country="Italy" styleclass="container1" today_confirmed="9483" />
+      <Country class="even" country="Spain" styleclass="container2" today_confirmed="655" />
+    </div>
   </>
 );
 

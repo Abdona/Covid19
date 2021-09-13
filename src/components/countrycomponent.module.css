@@ -1,24 +1,21 @@
-.container1 {
+.country1 {
   padding: 20px;
   background-color: #e04f82;
-  margin-bottom: 10px;
 }
 
-.container2 {
+.country2 {
   padding: 20px;
   background-color: #cc4775;
-  margin-bottom: 10px;
 }
 
 .container h1,
 h3 {
-  color: rgb(112, 112, 112);
+  color: #fff;
   text-decoration: none;
 }
 
 .Link {
-  color: #2ea8d1;
+  color: #fff;
   font-family: "Poppins", sans-serif;
   text-decoration: none;
-  margin-right: 15px;
 }
