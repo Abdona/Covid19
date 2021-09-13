@@ -4,7 +4,7 @@ import style from './statecomponent.module.css';
 import navarrow from '../assets/right-arrow.svg';
 
 const State = (props) => {
-  const stylex = props.class === 'even' ? style.country1 : style.country2;
+  const stylex = props.class === 'even' ? style.state1 : style.state2;
   let navarrowicon = '';
   if (props.nav) {
     navarrowicon = (
