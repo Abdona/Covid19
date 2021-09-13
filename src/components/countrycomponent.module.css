@@ -10,9 +10,11 @@
 
 .country1 h1,
 .country2 h1,
-h3 {
+.country1 h3,
+.country2 h3 {
   color: #fff;
   text-decoration: none;
+  background-color: inherit;
 }
 
 .Link {
