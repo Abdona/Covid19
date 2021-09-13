@@ -31,8 +31,16 @@
   display: flex;
 }
 
+.imgcont img:nth-child(1) {
+  margin: 0 auto;
+}
+
 .imgcont img:nth-child(2) {
   height: 16px;
   position: absolute;
   right: 23px;
+}
+
+.textcont {
+  text-align: end;
 }

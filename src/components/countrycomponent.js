@@ -22,12 +22,14 @@ const Country = (props) => {
         <img src={flag} alt={props.country} />
         {navarrowicon}
       </div>
-      <h1>
-        {props.country}
-      </h1>
-      <h3>
-        {props.today_confirmed}
-      </h3>
+      <div className={style.textcont}>
+        <h1>
+          {props.country}
+        </h1>
+        <h3>
+          {props.today_confirmed}
+        </h3>
+      </div>
     </div>
 
   );
