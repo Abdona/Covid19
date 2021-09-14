@@ -18,10 +18,14 @@ const State = (props) => {
         <h1>
           {props.country}
         </h1>
-        <h3>
-          {props.today_confirmed}
-          {navarrowicon}
-        </h3>
+        <div>
+          <h3>
+            {props.today_confirmed}
+          </h3>
+          <span>
+            {navarrowicon}
+          </span>
+        </div>
       </div>
     </div>
 
