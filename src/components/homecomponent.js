@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { fetchcoronabycountry } from '../utils/API';
@@ -32,9 +31,17 @@ const Home = () => {
       />
     );
   });
+  const continent = (
+    <Country
+      key="Europe"
+      country="Europe"
+      today_confirmed={stat[0].total.today_confirmed}
+      nav
+    />
+  );
   return (
     <div className={style.home}>
-      <Country type="even" nav={false} country="Europe" styleclass="container1" today_confirmed="383" />
+      {continent}
       <h3>STATS BY COUNTRY</h3>
       <div className={style.container}>
         {countryList}
