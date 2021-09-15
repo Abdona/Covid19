@@ -10,7 +10,7 @@ export const addAction = (payload) => ({
 const homeReducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_STATS:
-      return [...state, ...action.payload];
+      return [...state, action.payload];
     default:
       return state;
   }
