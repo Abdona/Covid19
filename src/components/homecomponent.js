@@ -7,10 +7,11 @@ import { addAction } from '../redux/home/home';
 
 const Home = () => {
   const stat = useSelector((state) => state.homeReducer);
+  const country = ['Germany', 'Spain', 'Italy', 'France'];
   const dispatch = useDispatch();
   const load = async () => {
     if (!stat.length) {
-      await ['germany', 'spain', 'italy', 'france'].forEach(async (element) => {
+      country.forEach(async (element) => {
         const resp = await fetchcoronabycountry(element);
         dispatch(addAction(resp));
       });
@@ -19,14 +20,16 @@ const Home = () => {
   useEffect(async () => {
     await load();
   }, []);
-  const country = ['Germany', 'Spain', 'Italy', 'France'];
+  let casesSum = 0;
   const countryList = stat.map((obj) => {
-    const curcountr = country.shift();
+    const currcont = Object.keys(obj.dates['2020-03-22'].countries);
+    const cases = obj.dates['2020-03-22'].countries[currcont].today_confirmed;
+    casesSum += cases;
     return (
       <Country
-        key={obj.dates['2020-03-22'].countries[curcountr].id}
-        country={obj.dates['2020-03-22'].countries[curcountr].id}
-        today_confirmed={obj.total.today_confirmed}
+        key={obj.dates['2020-03-22'].countries[currcont].id}
+        country={obj.dates['2020-03-22'].countries[currcont].id}
+        today_confirmed={cases}
         nav
       />
     );
@@ -35,8 +38,8 @@ const Home = () => {
     <Country
       key="Europe"
       country="Europe"
-      today_confirmed={stat[0].total.today_confirmed}
-      nav
+      today_confirmed={casesSum}
+      nav={false}
     />
   );
   return (
