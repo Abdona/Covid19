@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Home page Components matches snapshot 1`] = `
+<div
+  className="home"
+  data-testid="homepage"
+>
+  <div
+    className="country2"
+  >
+    <div
+      className="imgcont"
+    >
+      <img
+        alt="Europe"
+        src="country.svg"
+      />
+      
+    </div>
+    <div
+      className="textcont"
+    >
+      <h1>
+        Europe
+      </h1>
+      <h3>
+        0
+      </h3>
+    </div>
+  </div>
+  <h3>
+    STATS BY COUNTRY
+  </h3>
+  <div
+    className="container"
+  />
+</div>
+`;
