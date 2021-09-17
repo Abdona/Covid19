@@ -45,6 +45,7 @@ const Home = () => {
   );
   return (
     <div className={style.home}>
+      <h3>Corona Statisitics</h3>
       {continent}
       <h3>STATS BY COUNTRY</h3>
       <div className={style.container}>
