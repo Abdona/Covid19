@@ -6,14 +6,14 @@ Corona Statisitics.
  [Covid19](https://dazzling-franklin-970efc.netlify.app/)
 
 # Home Page
-<!-- 
-| ![screenshot](./assests/spacenavbar.png)|
-| :------------: | -->
+
+| ![screenshot](./homepage.png)|
+| :------------: |
 
 # Description Page
 
-<!-- | ![screenshot](./assests/rocketpage.png) | ![screenshot](./assests/missions.png)
-| :------------: | :------------: | -->
+| ![screenshot](./descriptionpage.png)|
+| :------------: |
 
 ## Installation
 
