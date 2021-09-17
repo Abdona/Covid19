@@ -7,7 +7,7 @@ import { addAction } from '../redux/home/home';
 
 const Home = () => {
   const stat = useSelector((state) => state.homeReducer);
-  const country = ['Germany', 'Spain', 'Italy', 'France'];
+  const country = ['Germany', 'Spain', 'Italy', 'France', 'Croatia'];
   const dispatch = useDispatch();
   const load = async () => {
     if (!stat.length) {
