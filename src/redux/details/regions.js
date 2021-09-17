@@ -1,4 +1,4 @@
-const ADD_STATS = 'covid19/details/ADD_STATS';
+const ADD_STATS = 'covid19/regions/ADD_STATS';
 
 const initialState = [];
 
@@ -7,7 +7,7 @@ export const addAction = (payload) => ({
   payload,
 });
 
-const detailsReducer = (state = initialState, action) => {
+const regionsReducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_STATS:
       return [...state, action.payload];
@@ -16,4 +16,4 @@ const detailsReducer = (state = initialState, action) => {
   }
 };
 
-export default detailsReducer;
+export default regionsReducer;

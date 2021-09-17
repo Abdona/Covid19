@@ -44,3 +44,8 @@
 .textcont {
   text-align: end;
 }
+
+button {
+  border: none;
+  background-color: #cc4775;
+}

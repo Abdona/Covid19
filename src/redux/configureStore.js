@@ -2,9 +2,11 @@ import { createStore, combineReducers, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import homeReducer from './home/home';
 import detailsReducer from './details/details';
+import regionsReducer from './details/regions';
 
 const rootReducer = combineReducers({
   homeReducer,
+  regionsReducer,
   detailsReducer,
 });
 
