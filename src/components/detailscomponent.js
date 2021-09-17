@@ -11,34 +11,24 @@ import { fetchcoronabycountry } from '../utils/API';
 import style from './detailscomponent.module.css';
 import backarrow from '../assets/back-arrow.svg';
 import { addAction } from '../redux/details/regions';
-import capitalizeFirstLetter from '../utils/capitalizeFirstletter';
 
 const Details = () => {
-  let stateList;
   const stat = useSelector((state) => state.detailsReducer);
-  const regionStat = useSelector((state) => state.regionsReducer);
+  const countries = useSelector((state) => state.homeReducer);
   const dispatch = useDispatch();
-  const currcont = capitalizeFirstLetter(stat[stat.length - 1]);
-  const load = async () => {
-    const resp = await fetchcoronabycountry(currcont);
-    dispatch(addAction(resp));
-  };
-  useEffect(async () => {
-    await load();
-  }, []);
-  if (regionStat.length) {
-    const { regions } = regionStat[regionStat.length - 1].dates['2020-03-22'].countries[currcont];
-    stateList = regions.map((obj) => (
-      <State
-        key={obj.id}
-        type="even"
-        nav
-        country={obj.name}
-        styleclass="container1"
-        today_confirmed={obj.today_confirmed}
-      />
-    ));
-  }
+  const currcont = stat[stat.length - 1];
+  const selectedCountry = countries.filter((country) => Object.keys(country.dates['2020-03-22'].countries)[0] === currcont);
+  const { regions } = selectedCountry[0].dates['2020-03-22'].countries[currcont];
+  const stateList = regions.map((obj) => (
+    <State
+      key={obj.id}
+      type="even"
+      nav
+      country={obj.name}
+      styleclass="container1"
+      today_confirmed={obj.today_confirmed}
+    />
+  ));
   return (
     <div className={style.home}>
       <Link exact to="/">

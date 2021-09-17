@@ -5,11 +5,12 @@ import style from './countrycomponent.module.css';
 import flag from '../assets/country.svg';
 import { addAction } from '../redux/details/details';
 import navarrow from '../assets/right-arrow.svg';
+import capitalizeFirstLetter from '../utils/capitalizeFirstletter';
 
 const Country = (props) => {
   const dispatch = useDispatch();
   const handleaction = (event) => {
-    dispatch(addAction(event.target.id));
+    dispatch(addAction(capitalizeFirstLetter(event.target.id)));
   };
   const {
     type, nav, country, today_confirmed: todayConfirmed, id,
