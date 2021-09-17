@@ -2,6 +2,9 @@
 
 Corona Statisitics.
 
+# Video Presentation
+https://www.youtube.com/watch?v=pqE2OsOnVpY
+
 # live Demo
  [Covid19](https://dazzling-franklin-970efc.netlify.app/)
 
