@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+import PropTypes from 'prop-types';
 import style from './statecomponent.module.css';
 import navarrow from '../assets/right-arrow.svg';
 
@@ -36,5 +36,7 @@ const State = (props) => {
 
   );
 };
+
+State.propTypes = { type: PropTypes.string }.isRequired;
 
 export default State;

@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import style from './countrycomponent.module.css';
 import flag from '../assets/country.svg';
@@ -46,5 +46,7 @@ const Country = (props) => {
 
   );
 };
+
+Country.propTypes = { type: PropTypes.string }.isRequired;
 
 export default Country;
