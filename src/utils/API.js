@@ -11,12 +11,3 @@ export const fetchcoronabycountry = async (country) => {
   const respobj = await resp.json();
   return respobj;
 };
-
-// const fetchcoronabycountry = async (country) => {
-//   const resp = await fetch(`https://api.covid19tracking.narrativa.com/api/2020-03-22/country/${country}`);
-//   const respobj = await resp.json();
-//   const count = 'Germany';
-//   console.log(respobj.dates['2020-03-22'].countries[count].regions);
-// };
-
-// fetchcoronabycountry('germany');
