@@ -1,5 +1,3 @@
-/* eslint-disable no-undef */
-/* eslint-disable no-unused-vars */
 import {
   Link, useLocation,
 } from 'react-router-dom';
@@ -7,7 +5,6 @@ import State from './statecomponent';
 import Country from './countrycomponent';
 import style from './detailscomponent.module.css';
 import backarrow from '../assets/back-arrow.svg';
-import capitalizeFirstLetter from '../utils/capitalizeFirstletter';
 
 const Details = () => {
   const location = useLocation();
