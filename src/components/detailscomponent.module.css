@@ -1,0 +1,14 @@
+.home {
+  background-color: #d24a79;
+}
+
+.home h3 {
+  background-color: inherit;
+  padding: 0.3rem 0 0.3rem 0.5rem;
+  color: #fff;
+}
+
+.backarrow {
+  width: 20px;
+  padding: 0.3rem 0 0.3rem 0.5rem;
+}

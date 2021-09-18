@@ -1,0 +1,52 @@
+.state1 {
+  padding: 20px;
+  background-color: #e04f82;
+  position: relative;
+}
+
+.state2 {
+  padding: 20px;
+  background-color: #cc4775;
+  position: relative;
+}
+
+.state1 h1,
+.state2 h1,
+.state1 h3,
+.state2 h3 {
+  color: #fff;
+  text-decoration: none;
+  background-color: inherit;
+}
+
+.Link {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  position: absolute;
+  right: 23px;
+}
+
+.imgcont {
+  display: flex;
+}
+
+.imgcont img:nth-child(1) {
+  margin: 0 auto;
+}
+
+.imgcont img:nth-child(2) {
+  height: 16px;
+  position: absolute;
+  right: 23px;
+}
+
+.textcont {
+  display: flex;
+  justify-content: space-between;
+}
+
+.textcont div h3 {
+  display: inline-block;
+  margin-right: 1.899rem;
+}
