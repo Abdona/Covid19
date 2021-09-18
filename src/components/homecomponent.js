@@ -45,7 +45,7 @@ const Home = () => {
     />
   );
   return (
-    <div className={style.home}>
+    <div className={style.home} data-testid="homepage">
       <h3>Corona Statisitics</h3>
       {continent}
       <h3>STATS BY COUNTRY</h3>

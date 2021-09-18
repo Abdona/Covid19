@@ -30,7 +30,7 @@ const Country = (props) => {
   }
   return (
 
-    <div className={stylex}>
+    <div className={stylex} data-testid="country">
       <div className={style.imgcont}>
         <img src={flag} alt={country} />
         {navarrowicon}

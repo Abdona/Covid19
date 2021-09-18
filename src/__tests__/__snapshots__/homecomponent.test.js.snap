@@ -5,6 +5,9 @@ exports[`Test Home page Components matches snapshot 1`] = `
   className="home"
   data-testid="homepage"
 >
+  <h3>
+    Corona Statisitics
+  </h3>
   <div
     className="country2"
     data-testid="country"
