@@ -10,11 +10,11 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/description">
-          <Details />
-        </Route>
-        <Route path="/">
+        <Route exact path="/">
           <Home />
+        </Route>
+        <Route path="/description/:country">
+          <Details />
         </Route>
       </Switch>
     </Router>

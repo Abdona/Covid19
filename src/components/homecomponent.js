@@ -30,6 +30,7 @@ const Home = () => {
         key={obj.dates['2020-03-22'].countries[currcont].id}
         id={obj.dates['2020-03-22'].countries[currcont].id}
         country={obj.dates['2020-03-22'].countries[currcont].id}
+        countryState={obj}
         today_confirmed={cases}
         nav
       />

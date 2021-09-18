@@ -13,13 +13,14 @@ const Country = (props) => {
     dispatch(addAction(capitalizeFirstLetter(event.target.id)));
   };
   const {
-    type, nav, country, today_confirmed: todayConfirmed, id,
+    type, nav, country, countryState, today_confirmed: todayConfirmed, id,
   } = props;
+  // console.log(countryState);
   const stylex = type === 'even' ? style.country1 : style.country2;
   let navarrowicon = '';
   if (nav) {
     navarrowicon = (
-      <Link to="/description" className={style.Link}>
+      <Link to={{ pathname: `/description/${id}`, state: countryState }} className={style.Link}>
         <button type="button" id={id} onClick={handleaction}>
           <img src={navarrow} id={id} alt="navarrow" />
           {' '}
